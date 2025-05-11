@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RandomJoke</string>
+    <string name="category_all">All Jokes</string>
+    <string name="category_programming">Programming Jokes</string>
+    <string name="category_favorite">Favorite Jokes</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="new_joke">New Joke</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_favorite_joke">Favorite Jokes List</string>
+</resources>
