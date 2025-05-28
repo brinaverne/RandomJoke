@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.randomjoke.model.Joke
 
 
-@Database(entities = [Joke::class], version = 1)
+@Database(entities = [Joke::class], version = 2)
 abstract class JokeDataBase():RoomDatabase() {
 
     abstract fun jokeDao(): JokeDAO
