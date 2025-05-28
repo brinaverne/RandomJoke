@@ -27,4 +27,8 @@ class JokeRepository(context: Context) {
     fun selectAllFavoriteJokes(): MutableList<Joke>{
         return jokeDataBase.selectAll()
     }
+
+    fun deleteOneFavoriteJoke(id: Int){
+        jokeDataBase.deleteOne(id)
+    }
 }

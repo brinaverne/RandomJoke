@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
@@ -98,10 +99,11 @@ class MainActivity : AppCompatActivity() {
 
         imgButtonAddFavorite.setOnClickListener {
             var favdialog = AlertDialog.Builder(this)
-                .setTitle("Wish to move this joke to favorites?")
+                .setTitle(R.string.wish_favorite)
                 .setPositiveButton(R.string.yes, object: DialogInterface.OnClickListener{
                     override fun onClick(dialog: DialogInterface?, which: Int) {
                         viewmodel.insertFavoriteJoke(objectJoke)
+                        Toast.makeText(this@MainActivity, R.string.moved_favorites , Toast.LENGTH_SHORT).show()
                     }
                 })
                 .setNegativeButton(R.string.no, object: DialogInterface.OnClickListener{

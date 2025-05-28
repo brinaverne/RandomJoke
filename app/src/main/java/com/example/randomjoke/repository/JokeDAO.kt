@@ -18,5 +18,8 @@ interface JokeDAO {
     @Query("SELECT * FROM JOKE ORDER BY RANDOM() LIMIT 1")
     fun selectOne(): Joke
 
+    @Query("DELETE FROM JOKE WHERE id = :id")
+    fun deleteOne(id: Int)
+
 
 }

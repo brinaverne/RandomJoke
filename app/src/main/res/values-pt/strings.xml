@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RandomJoke</string>
+    <string name="category_all">Todas as Piadas</string>
+    <string name="category_programming">Piadas de Programação</string>
+    <string name="category_favorite">Piadas Favoritadas</string>
+    <string name="add_to_favorite">Adicionar aos Favoritos</string>
+    <string name="new_joke">Nova Piada</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="title_favorite_joke">Lista de Piadas Favoritadas</string>
+    <string name="joke">Piada</string>
+    <string name="moved_favorites">Movido para Favoritos</string>
+    <string name="success_delete">Deletado com Sucesso</string>
+    <string name="wish_favorite">Deseja adicionar a piada aos favoritos?</string>
+    <string name="wish_delete">Deseja deletar a piada dos favoritos?</string>
+</resources>

@@ -36,6 +36,10 @@ class JokeViewModel(application: Application) : AndroidViewModel(application) {
         listJoke.postValue(repository.selectAllFavoriteJokes())
     }
 
+    fun deleteOneFavoriteJoke(id: Int){
+        repository.deleteOneFavoriteJoke(id)
+    }
+
 
 
 

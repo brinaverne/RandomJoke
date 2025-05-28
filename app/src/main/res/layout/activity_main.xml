@@ -20,7 +20,8 @@
             android:src="@drawable/ic_menu"
             android:backgroundTint="@color/white"
             app:tint ="@color/green"
-            android:id="@+id/image_button_menu"/>
+            android:id="@+id/image_button_menu"
+            android:tooltipText="@string/title_favorite_joke"/>
 
 
         <ImageButton
@@ -62,7 +63,7 @@
         android:id="@+id/text_joke"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Joke"
+        android:text="@string/joke"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -8,4 +8,9 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="title_favorite_joke">Favorite Jokes List</string>
+    <string name="joke">Joke</string>
+    <string name="moved_favorites">Moved to Favorites</string>
+    <string name="success_delete">Successfully deleted</string>
+    <string name="wish_favorite">Wish to move this joke to favorites?</string>
+    <string name="wish_delete">Wish to remove this joke from favorites?</string>
 </resources>
