@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RandomJoke</string>
+    <string name="app_name">Random Joke</string>
     <string name="category_all">All Jokes</string>
     <string name="category_programming">Programming Jokes</string>
     <string name="category_favorite">Favorite Jokes</string>
@@ -13,4 +13,5 @@
     <string name="success_delete">Successfully deleted</string>
     <string name="wish_favorite">Wish to move this joke to favorites?</string>
     <string name="wish_delete">Wish to remove this joke from favorites?</string>
+    <string name="empty_list">Empty List \n You need to add Jokes to Favorites</string>
 </resources>

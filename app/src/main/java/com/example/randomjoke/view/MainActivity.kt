@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.randomjoke.R
 import com.example.randomjoke.model.Joke
 import com.example.randomjoke.viewmodel.JokeViewModel
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -103,7 +104,8 @@ class MainActivity : AppCompatActivity() {
                 .setPositiveButton(R.string.yes, object: DialogInterface.OnClickListener{
                     override fun onClick(dialog: DialogInterface?, which: Int) {
                         viewmodel.insertFavoriteJoke(objectJoke)
-                        Toast.makeText(this@MainActivity, R.string.moved_favorites , Toast.LENGTH_SHORT).show()
+                        /*Toast.makeText(this@MainActivity, R.string.moved_favorites , Toast.LENGTH_SHORT).show()*/
+                        Snackbar.make(findViewById(R.id.layout_main_activity), R.string.moved_favorites, Snackbar.LENGTH_SHORT).show()
                     }
                 })
                 .setNegativeButton(R.string.no, object: DialogInterface.OnClickListener{
