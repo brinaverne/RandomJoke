@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RandomJoke</string>
+    <string name="app_name">Random Joke</string>
     <string name="category_all">Todas as Piadas</string>
     <string name="category_programming">Piadas de Programação</string>
     <string name="category_favorite">Piadas Favoritadas</string>
@@ -14,4 +14,5 @@
     <string name="success_delete">Deletado com Sucesso</string>
     <string name="wish_favorite">Deseja adicionar a piada aos favoritos?</string>
     <string name="wish_delete">Deseja deletar a piada dos favoritos?</string>
+    <string name="empty_list">Lista Vazia \n É necessário adicionar uma piada aos favoritos</string>
 </resources>

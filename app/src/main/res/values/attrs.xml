@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="linhaCor" format="color" />
+    <attr name="toolbarCor" format="color" />
+    <attr name="buttonCorFiltros" format="color" />
+    <attr name="buttonText" format="color"/>
+    <attr name="titleText" format="color"/>
+    <attr name="cardviewBackground" format="color"/>
+</resources>

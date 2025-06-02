@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#20C10D</color>
     <color name="grey">#6A6A6A</color>
+    <color name="greyNightTheme">#AFA7A7</color>
+    <color name="blackNightTheme">#B7000000</color>
 </resources>

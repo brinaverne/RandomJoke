@@ -3,5 +3,11 @@
     <style name="Base.Theme.RandomJoke" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="linhaCor">@color/greyNightTheme</item>
+        <item name="toolbarCor">@color/white</item>
+        <item name="buttonCorFiltros">@color/white</item>
+        <item name="buttonText">@color/white</item>
+        <item name="titleText">@color/grey</item>
+        <item name="cardviewBackground">@color/blackNightTheme</item>
     </style>
 </resources>

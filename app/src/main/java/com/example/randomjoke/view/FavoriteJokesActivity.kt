@@ -13,6 +13,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.view.isEmpty
+import androidx.core.view.isNotEmpty
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,12 +30,13 @@ class FavoriteJokesActivity : AppCompatActivity() {
     }
 
     lateinit var recyclerFavoriteJoke: RecyclerView
+    lateinit var emptyListText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorite_jokes)
 
-
+        emptyListText = findViewById(R.id.empty_list_favorite_list)
         recyclerFavoriteJoke = findViewById(R.id.recyclerview_favorite_joke)
         recyclerFavoriteJoke.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         /*recyclerFavoriteJoke.adapter = JokeAdapter(listOf(), this@FavoriteJokesActivity)*/
@@ -41,6 +44,10 @@ class FavoriteJokesActivity : AppCompatActivity() {
         viewmodel.selectAllFavoriteJokes()
 
         viewmodel.listJoke.observe(this@FavoriteJokesActivity, {
+            if (it.isEmpty()){
+                emptyListText.visibility = View.VISIBLE
+
+            }
             recyclerFavoriteJoke?.adapter = object: JokeAdapter(it, this@FavoriteJokesActivity){
                 override fun deleteOneFavoriteJoke(id: Int) {
                     viewmodel.deleteOneFavoriteJoke(id)

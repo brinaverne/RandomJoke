@@ -8,7 +8,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/layout_cardview_joke">
+        android:id="@+id/layout_cardview_joke"
+        android:background="?attr/cardviewBackground">
 
         <TextView
             android:id="@+id/text_cardview_joke"
@@ -27,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginVertical="10dp"
-            android:background="@color/grey"
+            android:background="?attr/linhaCor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_cardview_joke" />
